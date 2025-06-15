@@ -1,0 +1,385 @@
+/* Zimmer Page Specific Styles */
+
+/* Hero Section */
+.zimmer-hero {
+    position: relative;
+    height: 60vh;
+    min-height: 400px;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.zimmer-hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.zimmer-hero-bg::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.zimmer-hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.zimmer-hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    width: 90%;
+    max-width: 800px;
+}
+
+.zimmer-hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.zimmer-hero-content p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Zimmer Details Section */
+.zimmer-details {
+    padding: 5rem 0;
+    background-color: #f9f9f9;
+}
+
+.zimmer-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.zimmer-description {
+    flex: 1;
+    min-width: 300px;
+}
+
+.zimmer-description h2 {
+    font-size: 2.2rem;
+    color: #c7bb91;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.zimmer-description h2:hover {
+    transform: translateY(-2px);
+    text-shadow: 0 2px 10px rgba(199, 187, 145, 0.2);
+}
+
+.couples-only {
+    font-size: 1rem;
+    color: #666;
+    font-weight: normal;
+}
+
+.zimmer-features {
+    margin: 2rem 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.feature-item i {
+    font-size: 1.5rem;
+    color: #c7bb91;
+    margin-left: 1rem;
+    min-width: 30px;
+    text-align: center;
+}
+
+.feature-item p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.zimmer-cta {
+    margin-top: 2rem;
+}
+
+.order-btn.large {
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Gallery */
+.zimmer-gallery {
+    flex: 1;
+    min-width: 300px;
+}
+
+.zimmer-gallery h3 {
+    font-size: 1.8rem;
+    color: #c7bb91;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.zimmer-gallery h3:hover {
+    transform: translateY(-2px);
+    text-shadow: 0 2px 10px rgba(199, 187, 145, 0.2);
+}
+
+.gallery-container {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.gallery-main {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.gallery-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-thumbs {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.gallery-thumbs::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
+}
+
+.thumb {
+    flex: 0 0 100px;
+    height: 75px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    scroll-snap-align: start;
+}
+
+.thumb:hover {
+    transform: translateY(-3px);
+}
+
+.thumb.active {
+    border-color: #c7bb91;
+}
+
+.thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.gallery-modal.active {
+    display: flex;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 80vh;
+}
+
+.modal-content img {
+    max-width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+}
+
+.modal-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.modal-prev, .modal-next {
+    color: white;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-prev:hover, .modal-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Back to Rooms Link */
+.back-to-rooms {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    color: #c7bb91;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.back-link i {
+    margin-left: 0.5rem;
+}
+
+.back-link:hover {
+    color: #b0a478;
+    transform: translateX(5px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .zimmer-hero {
+        height: 40vh;
+    }
+    
+    .zimmer-hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .zimmer-hero-content p {
+        font-size: 1.2rem;
+    }
+    
+    .zimmer-info {
+        flex-direction: column;
+    }
+    
+    .gallery-main {
+        height: 300px;
+    }
+    
+    .thumb {
+        flex: 0 0 80px;
+        height: 60px;
+    }
+    
+    .zimmer-description h2 {
+        font-size: 1.8rem;
+    }
+    
+    .feature-item i {
+        font-size: 1.3rem;
+    }
+    
+    .order-btn.large {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .zimmer-hero {
+        height: 30vh;
+    }
+    
+    .zimmer-hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .zimmer-hero-content p {
+        font-size: 1rem;
+    }
+    
+    .gallery-main {
+        height: 250px;
+    }
+    
+    .thumb {
+        flex: 0 0 70px;
+        height: 50px;
+    }
+    
+    .feature-item {
+        margin-bottom: 1rem;
+    }
+    
+    .feature-item i {
+        margin-left: 0.5rem;
+    }
+    
+    .zimmer-description h2 {
+        font-size: 1.5rem;
+    }
+    
+    .zimmer-gallery h3 {
+        font-size: 1.5rem;
+    }
+} 

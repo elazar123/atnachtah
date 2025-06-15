@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="צימר אתנחתא - צימרים לזוגות בגוש עציון">
+    <title>צימר אתנחתא - צימרים לזוגות</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <img src="logo.png" alt="לוגו צימר אתנחתא" height="60" />
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="#home">דף הבית</a></li>
+                    <li><a href="#about">אודות</a></li>
+                    <li><a href="#rooms">צימרים לזוגות</a></li>
+                    <li><a href="#gallery">גלריה</a></li>
+                    <li><a href="#contact">צור קשר</a></li>
+                </ul>
+            </nav>
+            <div class="header-action">
+                <a class="order-btn header-order" href="https://wa.me/972528109471?text=שלום וברכה,%0Aאני רוצה לברר לגבי שהות בצימרים של אתנחתא" target="_blank">
+                    הזמן צימר <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg">
+            <img src="photo/nof/כניסה.jpg" alt="Hero צימר" />
+        </div>
+        <div class="hero-content">
+            <h1>ברוכים הבאים לאתנחתא</h1>
+            <p>צימרים לזוגות בגוש עציון</p>
+            <form class="quick-booking-form">
+                <div class="main-fields">
+                    <input type="text" name="name" placeholder="שם מלא" required>
+                    <input type="tel" name="phone" placeholder="טלפון" required>
+                    <input type="email" name="email" placeholder="מייל" required>
+                </div>
+                <div class="date-inputs">
+                    <div class="date-field">
+                        <label>תאריך כניסה</label>
+                        <input type="date" name="date-in" required>
+                    </div>
+                    <div class="date-field">
+                        <label>תאריך יציאה</label>
+                        <input type="date" name="date-out" required>
+                    </div>
+                </div>
+                <button type="submit">הצטרפו אלינו לחווית אירוח</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="rooms">
+        <div class="container">
+            <h2>הצימרים שלנו</h2>
+            <div class="rooms-container">
+                <div class="room-cards">
+                    <div class="room-card">
+                        <div class="room-img-container">
+                            <a href="zimmer-nof.html" class="room-img-link">
+                                <img src="photo/nof/כניסה.jpg" alt="צימר נוף" class="room-img">
+                            </a>
+                        </div>
+                        <div class="room-content">
+                            <h3>צימר נוף</h3>
+                            <p>צימר עם נוף עוצר נשימה, מרפסת פרטית ואווירה רומנטית.</p>
+                            <div class="room-actions">
+                                <a class="room-link" href="zimmer-nof.html">פרטים נוספים</a>
+                                <a class="order-btn" href="https://wa.me/972528109471?text=שלום וברכה,%0Aאני רוצה להזמין את צימר נוף.%0Aאשמח לברר עליו,%0Aתודה רבה!" target="_blank">הזמן צימר</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card">
+                        <div class="room-img-container">
+                            <a href="zimmer-har.html" class="room-img-link">
+                                <img src="photo/har/IMG-20250522-WA0009.jpg" alt="צימר הר" class="room-img">
+                            </a>
+                        </div>
+                        <div class="room-content">
+                            <h3>צימר הר</h3>
+                            <p>צימר אינטימי עם נוף להרים, ג'קוזי מפנק ושקט מושלם.</p>
+                            <div class="room-actions">
+                                <a class="room-link" href="zimmer-har.html">פרטים נוספים</a>
+                                <a class="order-btn" href="https://wa.me/972528109471?text=שלום וברכה,%0Aאני רוצה להזמין את צימר הר.%0Aאשמח לברר עליו,%0Aתודה רבה!" target="_blank">הזמן צימר</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room-card">
+                        <div class="room-img-container">
+                            <a href="zimmer-gay.html" class="room-img-link">
+                                <img src="photo/gay/IMG-20250523-WA0007.jpg" alt="צימר גיא" class="room-img">
+                            </a>
+                        </div>
+                        <div class="room-content">
+                            <h3>צימר גיא</h3>
+                            <p>בקתת סטודיו בחלל אחד בעיצוב בוהו שיק.</p>
+                            <div class="room-actions">
+                                <a class="room-link" href="zimmer-gay.html">פרטים נוספים</a>
+                                <a class="order-btn" href="https://wa.me/972528109471?text=שלום וברכה,%0Aאני רוצה להזמין את צימר גיא.%0Aאשמח לברר עליו,%0Aתודה רבה!" target="_blank">הזמן צימר</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">אודות <span class="highlight-title">אתנחתא</span></h2>
+            <div class="about-content">
+                <div class="about-intro">
+                    <p class="highlight">בקצה הכפר. בתוך הטבע. חווית נופש והתחדשות אחרת!</p>
+                    
+                    <p>מתחם הצימרים "אתנחתא" הוקם מתוך אהבה לארץ ולנופיה,
+                    עם הרבה מסירות ורצון להחיות חבל ארץ קדום, בו חיו אבותינו.
+                    אזור נחלת יהודה משופע בנוף בראשיתי קסום, טרסות אבן עתיקות, בוסתני עצי זית ומעיינות.</p>
+                    
+                    <p>הצימרים נמצאים בשכונה המערבית של בת עין, (מאחז "בת עין ב")
+                    בכוונה להחיות את היישוב, ולתת לכם לטעום מהראשוניות וחבלי ההקמה של המקום.</p>
+                    
+                    <p>מתחם "אתנחתא" ממוקם על צלע ההר,
+                    עטוף טבע, מול נוף מקסים. שקט. אויר ואוירה.
+                    מרחק הליכה קלה למעין עין ליבנה.</p>
+                    
+                    <p>היתה לנו הרבה מחשבה על הפרטים הקטנים, שיתנו חוויה של רוגע והתחדשות.</p>
+                    
+                    <p>מזמינים אתכם לקחת אתנחתא.
+                    בואו להתחדש, להתמלא בכוחות, להתחבר לעצמכם ולארץ הטובה!</p>
+                    
+                    <p class="important-note">*האירוח מיועד לזוגות נשואים בלבד!</p>
+                </div>
+
+                <div class="about-details">
+                    <div class="details-box">
+                        <div class="box-header">
+                            <i class="fas fa-route"></i>
+                            <h3>דרכי הגעה</h3>
+                        </div>
+                        <ul>
+                            <li><strong>מכיוון ירושלים:</strong> משכונת גילה נוסעים לכביש המנהרות. ממשיכים ישר עד צומת גוש עציון ופונים ימינה. ממשיכים ישר עד בת עין.</li>
+                            <li><strong>מכיוון בית שמש:</strong> נוסעים על כביש 38 לכוון דרום עד צומת האלה ופונים שמאלה לכביש 375, ממשיכים ישר עד צומת עציונה ופונים ימינה לכביש 367. נוסעים במעלה ההר לגוש עציון כ- 15 ק"מ ופונים בכיכר ימינה לכיוון בת עין.</li>
+                            <li><strong>לאחר הכניסה לבת עין:</strong> צריך לחצות את הישוב לאורכו, להמשיך עם הכביש המתפתל בירידה ולאחריו בדרך עפר (לנסוע בזהירות!) הפונה ימינה. (עמוד מס 21)</li>
+                            <li><strong>לרשום בוויז:</strong> האי מתחם אתנחתא</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="details-box">
+                        <div class="box-header">
+                            <i class="fas fa-utensils"></i>
+                            <h3>מסעדות באזור גוש עציון</h3>
+                        </div>
+                        <ul>
+                            <li>יקבי גוש עציון-מרכז מבקרים, מסעדה חלבית-דגים {כ.מהדרין} 02-9309220</li>
+                            <li>פיצריה אפרת 02-9931630</li>
+                            <li>בורגרסבר אפרת, מרכז מסחרי תאנה {מהדרין} 02-9931129</li>
+                            <li>רוזה – מסעדה בשרית בצומת הגוש {חלק מהדרין אבא שאול} 02-6504483</li>
+                            <li>אנגליש קייק, בית קפה בצומת הגוש.</li>
+                            <li>פיצה נינוס- חלבי, בכפר עציון.</li>
+                            <li>חומוס הארץ-כפר עציון</li>
+                            <li>תלמי-לחמי מחמצת,קונדטוריה-כפר עציון</li>
+                            <li>פלורי-קפה צרפתי-כפר עציון</li>
+                            <li>קפה בחורשה-חלבי,חברתי-גבעות</li>
+                            <li>גרג-חלבי-צומת הגוש</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="details-box">
+                        <div class="box-header">
+                            <i class="fas fa-hiking"></i>
+                            <h3>אתרים באזור גוש עציון</h3>
+                        </div>
+                        <ul>
+                            <li>עין ליבנה – מסלול הליכה 10 דק' מהצימר.</li>
+                            <li>טיולים מאורגנים של בית ספר שדה כפר עציון – www.k-etzion.co.il</li>
+                            <li>מרכז מבקרים כפר עציון- חזיון אור קולי ואתר הנצחה 9935160</li>
+                            <li>הרדיון גן לאומי 5636249</li>
+                            <li>חוות ארץ האיילים חי בר עם האומגה הכי ארוכה בארץ, טיולי שטח ועוד 050-5388705 / 050-2041201</li>
+                            <li>טיולי ג'יפים במעינות גוש עציון ומדבר יהודה 0548006920 , 0528742493</li>
+                            <li>נסיעה לחברון, כ20 דק' מצומת הגוש.</li>
+                            <li>נסיעה לקבר רחל, כ15 דק' מצומת הגוש.</li>
+                            <li>לפירוט ולאפשרויות נוספות בקרו באתר תיירות המועצה- www.etziontour.org.il</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>גלריית תמונות</h2>
+            <div class="gallery-grid">
+                <!-- שורה 1 -->
+                <div class="gallery-item">
+                    <a href="zimmer-nof.html" class="gallery-img-link">
+                        <img src="photo/nof/כניסה.jpg" alt="צימר אתנחתא" class="gallery-img">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="zimmer-har.html" class="gallery-img-link">
+                        <img src="photo/har/IMG-20250522-WA0009.jpg" alt="צימר אתנחתא" class="gallery-img">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="zimmer-gay.html" class="gallery-img-link">
+                        <img src="photo/gay/IMG-20250523-WA0007.jpg" alt="צימר אתנחתא" class="gallery-img">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="zimmer-nof.html" class="gallery-img-link">
+                        <img src="photo/nof/IMG-20250523-WA0021.jpg" alt="צימר אתנחתא" class="gallery-img">
+                    </a>
+                </div>
+                
+                <!-- שורה 2 -->
+                <div class="gallery-item">
+                    <a href="zimmer-har.html" class="gallery-img-link">
+                        <img src="photo/har/חלומי.jpg" alt="צימר אתנחתא" class="gallery-img">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="zimmer-gay.html" class="gallery-img-link">
+                        <img src="photo/gay/IMG-20250523-WA0018.jpg" alt="צימר אתנחתא" class="gallery-img">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="zimmer-nof.html" class="gallery-img-link">
+                        <img src="photo/nof/IMG-20241222-WA0009.jpg" alt="צימר אתנחתא" class="gallery-img">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="zimmer-har.html" class="gallery-img-link">
+                        <img src="photo/har/IMG-20250523-WA0019.jpg" alt="צימר אתנחתא" class="gallery-img">
+                    </a>
+                </div>
+                
+                <!-- שורה 3 -->
+                <div class="gallery-item">
+                    <a href="zimmer-gay.html" class="gallery-img-link">
+                        <img src="photo/gay/IMG-20250522-WA0005.jpg" alt="צימר אתנחתא" class="gallery-img">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="zimmer-nof.html" class="gallery-img-link">
+                        <img src="photo/nof/בלילה.jpg" alt="צימר אתנחתא" class="gallery-img">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="zimmer-har.html" class="gallery-img-link">
+                        <img src="photo/har/IMG-20250522-WA0009.jpg" alt="צימר אתנחתא" class="gallery-img">
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a href="zimmer-gay.html" class="gallery-img-link">
+                        <img src="photo/gay/IMG-20250523-WA0007.jpg" alt="צימר אתנחתא" class="gallery-img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container contact-flex">
+            <div class="contact-info-block">
+                <h2>איפה אנחנו?</h2>
+                <div class="map-container">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3390.9262920799143!2d35.10827997553914!3d31.812184574504386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502d7d634c1fc4b%3A0xfd7c7e14cac376da!2z15HXqiDXoteZ158!5e0!3m2!1siw!2sil!4v1715983307902!5m2!1siw!2sil"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="map-info">
+                        <h3>מיקום</h3>
+                        <p>אתנחתא בת עין</p>
+                        <p>טלפון: 052-810-9471</p>
+                        <p>מייל: atnachtah@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-block">
+                <h2>צור קשר</h2>
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="שם מלא" required>
+                    <input type="email" name="email" placeholder="מייל" required>
+                    <input type="tel" name="phone" placeholder="טלפון" required>
+                    <input type="date" name="date-in" placeholder="תאריך כניסה" required>
+                    <input type="date" name="date-out" placeholder="תאריך יציאה" required>
+                    <textarea name="message" placeholder="הודעה" required></textarea>
+                    <a class="order-btn" href="https://wa.me/972528109471?text=שלום וברכה,%0Aאני רוצה לברר לגבי שהות בצימרים של אתנחתא" target="_blank">דברו איתנו בוואטסאפ <i class="fab fa-whatsapp"></i></a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms Section -->
+    <section class="terms-section">
+        <div class="container">
+            <h2>תנאי העסקה</h2>
+            <div class="terms-container">
+                <ul class="terms-list">
+                    <li>התשלום במזומן או בהעברה בנקאית.</li>
+                    <li>אנו עושים כמיטב יכולתנו כדי להנעים לכם את החופשה, ולכך אנו מתארגנים מראש!</li>
+                    <li>תנאי ביטול עסקה בצימר ע״פ תקנות הגנת הצרכן, התש״ע 2010:</li>
+                    <li>אם ביטל הצרכן את עסקת המכר מרחוק בתוך המועד של 14 יום ועמד בתנאי הביטול, ישלם דמי ביטול של 5% מערך העסקה או 100 ₪, הנמוך מביניהם.</li>
+                    <li>באם ביטל הלקוח חופשתו 7-5 ימים לפני המועד ישלם 50% מכלל העסקה.</li>
+                    <li>באם ביטל הלקוח חופשתו 4-1 ימים לפני כולל יום תחילת החופשה – ישלם מחיר מלא (במידה ולא ימצא מחליף)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>האתר נבנה על ידי סטודיו נהורא AI | כל הזכויות שמורות © 2025</p>
+        </div>
+    </footer>
+
+    <!-- Accessibility Button & Menu -->
+    <button class="accessibility-btn" aria-label="אפשרויות נגישות" id="accessibilityBtn">
+        <i class="fas fa-universal-access accessibility-icon"></i>
+    </button>
+    
+    <div class="accessibility-menu" id="accessibilityMenu">
+        <h3>אפשרויות נגישות</h3>
+        <div class="accessibility-options">
+            <div class="accessibility-option" id="highContrastOption">
+                <i class="fas fa-adjust"></i>
+                <span>ניגודיות גבוהה</span>
+            </div>
+            <div class="accessibility-option" id="largeTextOption">
+                <i class="fas fa-text-height"></i>
+                <span>טקסט מוגדל</span>
+            </div>
+            <div class="accessibility-option" id="textSpacingOption">
+                <i class="fas fa-text-width"></i>
+                <span>ריווח טקסט</span>
+            </div>
+            <div class="accessibility-option" id="readingGuideOption">
+                <i class="fas fa-ruler-horizontal"></i>
+                <span>סרגל קריאה</span>
+            </div>
+            <div class="accessibility-option" id="resetAccessibilityOption">
+                <i class="fas fa-undo"></i>
+                <span>איפוס הגדרות</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

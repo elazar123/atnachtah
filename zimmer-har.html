@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="צימר הר - צימר לזוגות בגוש עציון">
+    <title>צימר הר - אתנחתא</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="zimmer-page.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="לוגו צימר אתנחתא" height="60" />
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">דף הבית</a></li>
+                    <li><a href="index.html#about">אודות</a></li>
+                    <li><a href="index.html#rooms">צימרים לזוגות</a></li>
+                    <li><a href="index.html#gallery">גלריה</a></li>
+                    <li><a href="index.html#contact">צור קשר</a></li>
+                </ul>
+            </nav>
+            <div class="header-action">
+                <a class="order-btn header-order" href="https://wa.me/972528109471?text=שלום וברכה,%0Aאני רוצה לברר לגבי שהות בצימר הר של אתנחתא" target="_blank">
+                    הזמן צימר <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Zimmer Hero Section -->
+    <section class="zimmer-hero">
+        <div class="zimmer-hero-bg">
+            <img src="photo/har/IMG-20250522-WA0009.jpg" alt="צימר הר" />
+        </div>
+        <div class="zimmer-hero-content">
+            <h1>צימר הר</h1>
+            <p>חוויה זוגית מושלמת עם נוף פנורמי מרהיב</p>
+        </div>
+    </section>
+
+    <!-- Zimmer Details -->
+    <section class="zimmer-details">
+        <div class="container">
+            <div class="zimmer-info">
+                <div class="zimmer-description">
+                    <h2>צימר הר <span class="couples-only">(לזוג, אפשרי + 2)</span></h2>
+                    
+                    <div class="zimmer-features">
+                        <div class="feature-item">
+                            <i class="fas fa-kitchen-set"></i>
+                            <p>סלון ומטבח בחלל אחד. המטבח מאובזר בכיור חלבי/בשרי, מקרר, כירה חשמלית, קומקום חשמלי, מקרוגל, פלטה ומיחם חשמלי. ולצידו פינת אוכל כפרית.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-couch"></i>
+                            <p>בסלון ספה נפתחת לשינה, חלונות גדולים הצופים אל נוף פנורמי. מערכת קולנוע ודי.וי.די.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-bed"></i>
+                            <p>בחדר השינה מיטה נוחה ומעוצבת.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-hot-tub-person"></i>
+                            <p>אמבטית ג'קוזי ושירותים נפרדת.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-mountain-sun"></i>
+                            <p>מרפסת דק המשקיפה אל הנוף ורחבת דשא מוצלת בה ערסלים ופינות ישיבה.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-snowflake"></i>
+                            <p>מיזוג אוויר בכל חדר.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-wifi"></i>
+                            <p>Wifi גלישה חופשית.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="zimmer-cta">
+                        <a class="order-btn large" href="https://wa.me/972528109471?text=שלום וברכה,%0Aאני מעוניין/ת להזמין את צימר הר.%0Aאשמח לפרטים נוספים ובדיקת זמינות.%0Aתודה!" target="_blank">
+                            הזמינו עכשיו <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="zimmer-gallery">
+                    <h3>גלריית תמונות</h3>
+                    <div class="gallery-container">
+                        <div class="gallery-main">
+                            <img id="main-image" src="photo/har/IMG-20250522-WA0009.jpg" alt="צימר הר">
+                        </div>
+                        <div class="gallery-thumbs">
+                            <div class="thumb active" onclick="changeImage('photo/har/IMG-20250522-WA0009.jpg', this)">
+                                <img src="photo/har/IMG-20250522-WA0009.jpg" alt="צימר הר - מבט כללי">
+                            </div>
+                            <div class="thumb" onclick="changeImage('photo/har/IMG-20241222-WA0024.jpg', this)">
+                                <img src="photo/har/IMG-20241222-WA0024.jpg" alt="צימר הר - פנים">
+                            </div>
+                            <div class="thumb" onclick="changeImage('photo/har/חלומי.jpg', this)">
+                                <img src="photo/har/חלומי.jpg" alt="צימר הר - חדר שינה">
+                            </div>
+                            <div class="thumb" onclick="changeImage('photo/har/IMG-20250523-WA0019.jpg', this)">
+                                <img src="photo/har/IMG-20250523-WA0019.jpg" alt="צימר הר - פינת ישיבה">
+                            </div>
+                            <div class="thumb" onclick="changeImage('photo/har/IMG-20250523-WA0017.jpg', this)">
+                                <img src="photo/har/IMG-20250523-WA0017.jpg" alt="צימר הר - מטבח">
+                            </div>
+                            <div class="thumb" onclick="changeImage('photo/har/nof4.jpg', this)">
+                                <img src="photo/har/nof4.jpg" alt="צימר הר - נוף">
+                            </div>
+                            <div class="thumb" onclick="changeImage('photo/har/nof5.jpg', this)">
+                                <img src="photo/har/nof5.jpg" alt="צימר הר - מרפסת">
+                            </div>
+                            <div class="thumb" onclick="changeImage('photo/har/IMG-20250523-WA0028.jpg', this)">
+                                <img src="photo/har/IMG-20250523-WA0028.jpg" alt="צימר הר - נוף מרפסת">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="back-to-rooms">
+                <a href="index.html#rooms" class="back-link">
+                    <i class="fas fa-arrow-right"></i> חזרה לכל הצימרים
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>עיצוב: עיטור - סטודיו לעיצוב גרפי | כל הזכויות שמורות &copy; 2024</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function changeImage(src, thumb) {
+            document.getElementById('main-image').src = src;
+            
+            // Remove active class from all thumbs
+            const thumbs = document.querySelectorAll('.thumb');
+            thumbs.forEach(item => item.classList.remove('active'));
+            
+            // Add active class to clicked thumb
+            thumb.classList.add('active');
+        }
+    </script>
+</body>
+</html> 

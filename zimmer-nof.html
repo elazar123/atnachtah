@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="צימר נוף - צימר לזוגות בגוש עציון">
+    <title>צימר נוף - אתנחתא</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="zimmer-page.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="לוגו צימר אתנחתא" height="60" />
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">דף הבית</a></li>
+                    <li><a href="index.html#about">אודות</a></li>
+                    <li><a href="index.html#rooms">צימרים לזוגות</a></li>
+                    <li><a href="index.html#gallery">גלריה</a></li>
+                    <li><a href="index.html#contact">צור קשר</a></li>
+                </ul>
+            </nav>
+            <div class="header-action">
+                <a class="order-btn header-order" href="https://wa.me/972528109471?text=שלום וברכה,%0Aאני רוצה לברר לגבי שהות בצימר נוף של אתנחתא" target="_blank">
+                    הזמן צימר <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Zimmer Hero Section -->
+    <section class="zimmer-hero">
+        <div class="zimmer-hero-bg">
+            <img src="photo/nof/כניסה.jpg" alt="צימר נוף" />
+        </div>
+        <div class="zimmer-hero-content">
+            <h1>צימר נוף</h1>
+            <p>חוויה זוגית מושלמת עם נוף עוצר נשימה</p>
+        </div>
+    </section>
+
+    <!-- Zimmer Details -->
+    <section class="zimmer-details">
+        <div class="container">
+            <div class="zimmer-info">
+                <div class="zimmer-description">
+                    <h2>צימר נוף <span class="couples-only">(לזוגות בלבד)</span></h2>
+                    
+                    <div class="zimmer-features">
+                        <div class="feature-item">
+                            <i class="fas fa-kitchen-set"></i>
+                            <p>מטבח מאובזר בכיור חלבי/בשרי, מקרר, כירה חשמלית, קומקום חשמלי, טוסטר אובן (חלבי), פלטה ומיחם חשמלי. ולצידו פינת אוכל כפרית.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-bed"></i>
+                            <p>בחדר השינה מיטה נוחה ומעוצבת, די.וי.די ומסך פלאזמה גדול. בפינת החדר ג'קוזי זוגי מפנק עם אפשרות לסגירה עם וילון, לשמירה על פרטיות.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-couch"></i>
+                            <p>בסלון ישנה פינת ישיבה וחלונות גדולים הצופים אל הנוף.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-mountain-sun"></i>
+                            <p>המרפסת מוצלת, משקיפה אל נוף הרי יהודה ובוסתני זיתים וטרסות עתיקות.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-hot-tub-person"></i>
+                            <p>לרשותכם חצר ספא מוצנעת, עם ג'קוזי זוגי מול הנוף.</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-wifi"></i>
+                            <p>Wifi גלישה חופשית.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="zimmer-cta">
+                        <a class="order-btn large" href="https://wa.me/972528109471?text=שלום וברכה,%0Aאני מעוניין/ת להזמין את צימר נוף.%0Aאשמח לפרטים נוספים ובדיקת זמינות.%0Aתודה!" target="_blank">
+                            דברו איתנו בוואטסאפ <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="zimmer-gallery">
+                    <h3>גלריית תמונות</h3>
+                    <div class="gallery-container">
+                        <div class="gallery-main">
+                            <img id="main-image" src="photo/nof/כניסה.jpg" alt="צימר נוף">
+                        </div>
+                        <div class="gallery-thumbs">
+                            <div class="thumb active" onclick="changeImage('photo/nof/כניסה.jpg', this)">
+                                <img src="photo/nof/כניסה.jpg" alt="צימר נוף - כניסה">
+                            </div>
+                            <div class="thumb" onclick="changeImage('photo/nof/IMG-20250523-WA0021.jpg', this)">
+                                <img src="photo/nof/IMG-20250523-WA0021.jpg" alt="צימר נוף - פנים">
+                            </div>
+                            <div class="thumb" onclick="changeImage('photo/nof/IMG-20241222-WA0009.jpg', this)">
+                                <img src="photo/nof/IMG-20241222-WA0009.jpg" alt="צימר נוף - חדר שינה">
+                            </div>
+                            <div class="thumb" onclick="changeImage('photo/nof/____FB_IMG_1522295831761-עותק-עותק.jpg', this)">
+                                <img src="photo/nof/____FB_IMG_1522295831761-עותק-עותק.jpg" alt="צימר נוף - ג'קוזי">
+                            </div>
+                            <div class="thumb" onclick="changeImage('photo/nof/נוף.jpg', this)">
+                                <img src="photo/nof/נוף.jpg" alt="צימר נוף - נוף">
+                            </div>
+                            <div class="thumb" onclick="changeImage('photo/nof/בלילה.jpg', this)">
+                                <img src="photo/nof/בלילה.jpg" alt="צימר נוף - בלילה">
+                            </div>
+                            <div class="thumb" onclick="changeImage('photo/nof/IMG-20250523-WA0022.jpg', this)">
+                                <img src="photo/nof/IMG-20250523-WA0022.jpg" alt="צימר נוף - מרפסת">
+                            </div>
+                            <div class="thumb" onclick="changeImage('photo/nof/IMG-20250523-WA0014.jpg', this)">
+                                <img src="photo/nof/IMG-20250523-WA0014.jpg" alt="צימר נוף - נוף מרפסת">
+                            </div>
+                            <div class="thumb" onclick="changeImage('photo/nof/נוף0.jpg', this)">
+                                <img src="photo/nof/נוף0.jpg" alt="צימר נוף - נוף הרים">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal Gallery -->
+                    <div id="galleryModal" class="gallery-modal">
+                        <span class="modal-close" onclick="closeModal()">&times;</span>
+                        <div class="modal-content">
+                            <img id="modalImage" src="">
+                            <div class="modal-nav">
+                                <span class="modal-prev" onclick="changeSlide(-1)">&#10094;</span>
+                                <span class="modal-next" onclick="changeSlide(1)">&#10095;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="back-to-rooms">
+                <a href="index.html#rooms" class="back-link">
+                    <i class="fas fa-arrow-right"></i> חזרה לכל הצימרים
+                </a>
+            </div>
+
+            <div class="map-container">
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3390.9262920799143!2d35.10827997553914!3d31.812184574504386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1502d7d634c1fc4b%3A0xfd7c7e14cac376da!2z15HXqiDXoteZ158!5e0!3m2!1siw!2sil!4v1715983307902!5m2!1siw!2sil"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="map-info">
+                    <h3>מיקום</h3>
+                    <p>אתנחתא בת עין</p>
+                    <p>טלפון: 052-810-9471</p>
+                    <p>מייל: atnachtah@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>האתר נבנה על ידי סטודיו נהורא AI | כל הזכויות שמורות © 2025</p>
+        </div>
+    </footer>
+
+    <!-- Accessibility Button & Menu -->
+    <button class="accessibility-btn" aria-label="אפשרויות נגישות" id="accessibilityBtn">
+        <i class="fas fa-universal-access accessibility-icon"></i>
+    </button>
+    
+    <div class="accessibility-menu" id="accessibilityMenu">
+        <h3>אפשרויות נגישות</h3>
+        <div class="accessibility-options">
+            <div class="accessibility-option" id="highContrastOption">
+                <i class="fas fa-adjust"></i>
+                <span>ניגודיות גבוהה</span>
+            </div>
+            <div class="accessibility-option" id="largeTextOption">
+                <i class="fas fa-text-height"></i>
+                <span>טקסט מוגדל</span>
+            </div>
+            <div class="accessibility-option" id="textSpacingOption">
+                <i class="fas fa-text-width"></i>
+                <span>ריווח טקסט</span>
+            </div>
+            <div class="accessibility-option" id="readingGuideOption">
+                <i class="fas fa-ruler-horizontal"></i>
+                <span>סרגל קריאה</span>
+            </div>
+            <div class="accessibility-option" id="resetAccessibilityOption">
+                <i class="fas fa-undo"></i>
+                <span>איפוס הגדרות</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function changeImage(src, thumb) {
+            document.getElementById('main-image').src = src;
+            
+            // Remove active class from all thumbs
+            const thumbs = document.querySelectorAll('.thumb');
+            thumbs.forEach(item => item.classList.remove('active'));
+            
+            // Add active class to clicked thumb
+            thumb.classList.add('active');
+        }
+        
+        // Modal functionality
+        let slideIndex = 0;
+        const slides = [
+            "photo/nof/כניסה.jpg",
+            "photo/nof/IMG-20250523-WA0021.jpg",
+            "photo/nof/IMG-20241222-WA0009.jpg",
+            "photo/nof/____FB_IMG_1522295831761-עותק-עותק.jpg",
+            "photo/nof/נוף.jpg",
+            "photo/nof/בלילה.jpg",
+            "photo/nof/IMG-20250523-WA0022.jpg",
+            "photo/nof/IMG-20250523-WA0014.jpg",
+            "photo/nof/נוף0.jpg"
+        ];
+
+        function openModal() {
+            document.getElementById('galleryModal').classList.add('active');
+            showSlide(slideIndex);
+        }
+
+        function closeModal() {
+            document.getElementById('galleryModal').classList.remove('active');
+        }
+
+        function changeSlide(n) {
+            slideIndex += n;
+            if (slideIndex >= slides.length) {slideIndex = 0}
+            if (slideIndex < 0) {slideIndex = slides.length - 1}
+            showSlide(slideIndex);
+        }
+
+        function showSlide(n) {
+            document.getElementById('modalImage').src = slides[n];
+        }
+
+        // Open modal when clicking on main image
+        document.querySelector('.gallery-main').addEventListener('click', function() {
+            openModal();
+            showSlide(0);
+        });
+
+        // Close modal when clicking outside of content
+        window.onclick = function(event) {
+            const modal = document.getElementById('galleryModal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+            if (event.key === "ArrowRight") {
+                changeSlide(-1);
+            }
+            if (event.key === "ArrowLeft") {
+                changeSlide(1);
+            }
+        });
+    </script>
+</body>
+</html> 
