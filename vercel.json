@@ -1,5 +1,4 @@
 {
-  "name": "atnachtah",
   "version": 2,
   "builds": [
     {
@@ -7,34 +6,8 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ],
   "github": {
     "enabled": true,
     "silent": true
-  },
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=86400"
-        }
-      ]
-    },
-    {
-      "source": "/(.*).(jpg|jpeg|png|gif|webp|svg|ico)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=604800"
-        }
-      ]
-    }
-  ]
+  }
 } 
